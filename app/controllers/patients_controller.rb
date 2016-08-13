@@ -1,7 +1,6 @@
 class PatientsController < ApplicationController
   # before_filter :authorize
 
-
   def new
   end
 
@@ -22,6 +21,8 @@ class PatientsController < ApplicationController
     end
   end
 
+def show
+end
 
   private
 
