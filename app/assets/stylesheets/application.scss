@@ -13,3 +13,38 @@
  *= require_tree .
  *= require_self
  */
+
+@import "materialize";
+
+body {
+  background-color: #e1f5fe;
+}
+
+h1.header {
+  font-family: Futura;
+  float: left;
+  margin-left: 35px;
+  color: #424242;
+}
+
+p.tagline {
+  text-align: center;
+  font-family: Georgia;
+  font-size: 45px;
+  color: #2196f3;
+  line-height: 90%;
+}
+
+span.tag {
+  color: #424242;
+}
+
+div.logins {
+  text-align: center;
+  color: #2196f3;
+  font-family: Futura;
+}
+
+.loginbutton {
+
+}
