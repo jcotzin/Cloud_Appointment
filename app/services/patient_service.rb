@@ -1,5 +1,3 @@
-require 'HTTParty'
-
 class PatientService
 
   HEADER = {"Authorization"=>"Bearer #{ENV['CC_ACCESS_TOKEN']}"}
