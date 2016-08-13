@@ -1,24 +1,18 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Cloud Appointments
 
-Things you may want to cover:
 
-* Ruby version
+Video call with your doctor from anywhere! Seamlessly integrated into the CareCloud Appointmens App. The doctor simply clicks the link in the appo0intment, and the video call will start
 
-* System dependencies
+* No time off work needed
 
-* Configuration
+* No need to cancel those plans with friends
 
-* Database creation
+* It's your doctor with your medical records
 
-* Database initialization
+* Text and email reminders for the patients
 
-* How to run the test suite
+* Never miss an appointment again
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
-
-* ...
