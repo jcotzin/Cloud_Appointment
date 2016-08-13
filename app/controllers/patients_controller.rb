@@ -22,6 +22,7 @@ class PatientsController < ApplicationController
   end
 
 def show
+  @appointments = Appointment.find_by_patient_id(params[:id])
 end
 
   private
