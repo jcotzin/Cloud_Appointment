@@ -10,6 +10,7 @@ Rails.application.routes.draw do
 
   get '/signup' => 'patients#new'
   post '/patients' => 'patients#create'
+  get '/show' => 'patients#show'
   get '/party/:id' => 'rooms#party'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
