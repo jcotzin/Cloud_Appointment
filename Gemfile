@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+gem 'materialize-sass'
+gem 'font-awesome-sass'
+
 gem 'twilio-ruby'
 
 gem 'httparty'
