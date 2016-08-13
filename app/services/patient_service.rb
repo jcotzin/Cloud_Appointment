@@ -1,6 +1,6 @@
 class PatientService
-
   HEADER = {"Authorization"=>"Bearer #{ENV['CC_ACCESS_TOKEN']}"}
+  END_POINT = "https://external-api-gateway.development.carecloud.com/v2".freeze
 
   attr_reader :guid
 
@@ -33,6 +33,6 @@ class PatientService
   end
 
   def get_from_api
-    HTTParty.get("https://external-api-gateway.development.carecloud.com/v2/patients/#{guid}", headers: HEADER)
+    HTTParty.get("#{END_POINT}/patients/#{guid}", headers: HEADER)
   end
 end
