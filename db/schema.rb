@@ -10,6 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+
 ActiveRecord::Schema.define(version: 20160813181250) do
 
   create_table "appointments", force: :cascade do |t|
@@ -29,10 +30,11 @@ ActiveRecord::Schema.define(version: 20160813181250) do
     t.string   "email"
     t.string   "password_digest"
     t.string   "phone"
-    t.string   "ssn"
     t.string   "code"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
+    t.string   "first_name"
+    t.string   "last_name"
   end
 
   create_table "providers", force: :cascade do |t|

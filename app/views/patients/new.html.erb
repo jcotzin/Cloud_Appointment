@@ -2,8 +2,8 @@
 
 <%= form_for :user, url: '/users' do |f| %>
 
-  Name: <%= f.text_field :name %>
-  Email: <%= f.text_field :email %>
+  Referral Code <%= f.text_field :code %>
+  Last 4 Digits of Social Security <%= f.text_field :ssn %>
   Password: <%= f.password_field :password %>
   Password Confirmation: <%= f.password_field :password_confirmation %>
   <%= f.submit "Submit" %>

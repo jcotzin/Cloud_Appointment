@@ -1,21 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>GifVault</title>
+  <title>cloudapp</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-# added these lines.
+<h1 class="header">cloudapp</h1>
+
+<br><br><br><br><br>
+
+<p class="tagline">The wait is over.<br><span class="tag">Book and see your <br>doctor online.<br>Simple.</span></p>
+
+
+<br><br>
+
+
+<div class="logins">
 <% if current_patient %>
   Signed in as <%= current_patient.name %> | <%= link_to "Logout", '/logout' %>
 <% else %>
-  <%= link_to 'Login', '/login' %> | <%= link_to 'Signup', '/signup' %>
+  <%= link_to 'Login', '/login', {class: "waves-effect waves-light btn"}%> | <%= link_to 'Signup', '/signup', {class: "waves-effect waves-light btn"} %><br><br>
 <% end %>
 
 <%= yield %>
+</div>
+
 
 </body>
 </html>
