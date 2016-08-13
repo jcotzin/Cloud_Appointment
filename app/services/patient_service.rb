@@ -19,7 +19,7 @@ class PatientService
       first_name: patient["first_name"],
       last_name: patient["last_name"],
       email: patient["email_address"],
-      ssn: patient["ssn"],
+      ssn: patient["ssn"] ? patient["ssn"].chars.last(4).join : nil
       phone: patient_phone
     }
   end
