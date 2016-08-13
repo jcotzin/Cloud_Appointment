@@ -1,7 +1,6 @@
 class PatientsController < ApplicationController
   # before_filter :authorize
 
-
   def new
   end
 
@@ -16,12 +15,14 @@ class PatientsController < ApplicationController
 
     if params[:ssn] == patient_hash[:ssn] && patient.save
       session[:patient_id] = patient.id
-      redirect_to '/'
+      redirect_to patient
     else
       redirect_to '/signup'
     end
   end
 
+def show
+end
 
   private
 
