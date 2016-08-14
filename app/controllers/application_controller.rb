@@ -6,6 +6,11 @@ class ApplicationController < ActionController::Base
   end
   helper_method :current_patient
 
+  def logged_in?
+    current_patient
+  end
+  helper_method :logged_in?
+
   def authorize
     redirect_to '/login' unless current_patient
   end

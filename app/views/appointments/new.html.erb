@@ -1,0 +1,17 @@
+<%=form_for @appointment do |f|%>
+
+<h1>Create Your Appointment</h1>
+  <p>
+    Date
+    <%= f.date_field :start_date %>
+  </p>
+  <p>
+    Start Time
+    <%= f.time_field :start_time %>
+  </p>
+  <p>
+    End Time
+  <%= f.time_field :end_time %>
+  </p>
+  <%= f.submit "Create Appointment"%>
+<% end %>
