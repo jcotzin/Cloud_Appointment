@@ -1,20 +1,27 @@
+<body class="form">
+
+<br><br><br><br>
+<div style="text-align:center"><%= image_tag('logo.png') %></div>
 
 <div class="container">
   <div class="row">
     <div class="col s6 offset-s3">
+
       <%= form_tag '/login' do %>
 
-      <div class="input-field">
-        <%= text_field_tag :email, nil, class: "validate"%>
-        <label for="email">Email: </label>
-      </div>
+      <div class="input-field">
+          <%= text_field_tag :email, nil, class: "validate"%>
+          <label for="email">Email</label>
+        </div>
 
-      <div class="input-field">
-        <%= password_field_tag :password, nil, class: "validate"%>
-        <label for="email">Password: </label>
-      </div>
-      <%= submit_tag :submit %>
+        <div class="input-field">
+            <%= password_field_tag :password, nil, class: "validate"%>
+            <label for="email">Password</label>
+          </div>
+
+      <div style="text-align:center;"><%= submit_tag :submit, {class: "waves-effect waves-light blue btn"} %></div>
       <% end %>
     </div>
   </div>
 </div>
+</body>
