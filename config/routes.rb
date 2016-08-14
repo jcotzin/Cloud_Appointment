@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'welcome/home'
+
   resources :appointments do
     resources :rooms
   end
@@ -6,7 +8,7 @@ Rails.application.routes.draw do
   resources :patients do
     resources :appointments
   end
-  root 'sessions#new'
+  root 'welcome#home'
   get '/login' => 'sessions#new'
   post '/login' =>  'sessions#create'
   get '/logout' => 'sessions#destroy'
