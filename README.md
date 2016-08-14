@@ -9,6 +9,14 @@ Collaborators: Jon Rose, Salomon Pluviose, Jessica Cotzin, Karen Lam, Maxie Hern
 
 http://cloud-appointments.herokuapp.com/
 
+Test Login:
+Get Started
+Referral Code: 487b6f37-41fb-421d-8f37-aeeb59858d3c
+Last 4 digits: 1111
+
+-any password
+
+
 * No time off work needed
 
 * No need to cancel those plans with friends
