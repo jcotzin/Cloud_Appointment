@@ -14,7 +14,7 @@ class PatientsController < ApplicationController
 
     if patient.ssn == patient_hash[:ssn] && patient.save
       session[:patient_id] = patient.id
-      redirect_to patient
+      redirect_to root_path
     else
       redirect_to '/signup'
     end
