@@ -32,7 +32,7 @@ class AppointmentService
   end
 
   def appointment_link
-    "localhost:3000/provider/start/#{appointment.room.sessionId}"
+    "https://cloud-appointments.herokuapp.com/provider/start/#{appointment.room.sessionId}"
   end
 
   def post_appointment
