@@ -1,12 +1,14 @@
 // Place all the styles related to the appointments controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.sider {
+#sider {
   margin-top: -1%;
+  color: gray;
+  margin-left: 3%;
 }
 
 .side-nav h5 {
-  margin-left: 1%;
+  // margin-left: 5%;
   color: gray;
 }
 
