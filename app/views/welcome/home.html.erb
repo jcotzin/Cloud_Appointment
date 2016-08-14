@@ -2,7 +2,7 @@
 
 <br>
 <h3 class="header">cloudapp</h3><i class="fa fa-cloud fa-2x" style="margin-top:-5px; color:#2196f3;"></i>
-<br><br><br>
+<br><br><br><br><br>
 
 <p class="tagline">The wait is over.<br><span class="tag">Book and see<br>your doctor online.</span></p>
 
@@ -14,7 +14,7 @@
     <a style="text-align:center;"><%= link_to "VIEW MY APPOINTMENTS", patient_appointments_path(current_patient), {class: "waves-effect waves-light blue btn"} %></a>&nbsp;&nbsp;&nbsp;
     <a style="text-align:center;"><%= link_to "Logout", '/logout', {class: "waves-effect waves-light blue btn"} %></a>
 <% else %>
-  <%= link_to 'Login', '/login', {class: "waves-effect waves-light blue btn"}%>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <%= link_to 'GET STARTED', '/signup', {class: "waves-effect waves-light blue btn"} %><br><br>
+  <p style="font-size: 16px; margin-top:-30px;"><%= link_to 'Login', '/login', {class: "waves-effect waves-light blue btn-large"}%>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <%= link_to 'GET STARTED', '/signup', {class: "waves-effect waves-light blue btn-large"} %><br><br></p>
 <% end %>
 </div>
 <br><br><br><br><br><br><br><br>
@@ -23,25 +23,34 @@
 
 <div class="section white" style="color:#424242;">
   <div class="row container">
-    <br><br><br><br><h4 class="white">Seamless Scheduling</h4>
-    <p class="white">
+    <br><br><br><br><h4 class="white" style="color:#424242;">Seamless Scheduling</h4>
+    <p class="white" style="font-size:22px;">
       See your doctor anytime, anywhere. You virtual doctor's appointment has arrived.
     </p>
   </div>
 </div>
 
 <div class="section cyan lighten-5">
-    <br><br><br>
+    <br><br><br><br>
     <div class="row" style="text-align:center">
 
     <div class="col s4" style="color:#424242;">
-      <i class="fa fa-bolt fa-5x"></i>
+      <i class="fa fa-bolt fa-5x" style="color:#424242;"></i>
+      <p style="color:#424242; font-family:Futura; font-size:18px;">
+      Swift and easy registration,<br>scheduling and re-scheduling. Boom.
+      </p>
     </div>
     <div class="col s4" style="color:#424242;">
-      <i class="fa fa-users fa-5x"></i>
+      <i class="fa fa-users fa-5x" style="color:#424242;"></i>
+      <p style="color:#424242; font-family:Futura; font-size:18px;">
+        Virtual appointments allow you to<br>see your doctor without the wait.
+      </p>
     </div>
     <div class="col s4" style="color:#424242;">
-      <i class="fa fa-cog fa-5x"></i>
+      <i class="fa fa-cog fa-5x" style="color:#424242;"></i>
+      <p style="color:#424242; font-family:Futura; font-size:18px;">
+      Easy-to-use. Whether you're 7 or 70,<br>on your desktop or mobile device.
+      </p>
     </div>
 
   </div>
