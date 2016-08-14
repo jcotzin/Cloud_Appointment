@@ -1,20 +1,30 @@
 // Place all the styles related to the appointments controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.waves-effect {
-  
+// a.waves-effect {
+//   position: absolute;
+// }
+a.waves-effect.waves-light.btn {
+  color: white;
+  height: 40px;
+  margin: 68px;
+  margin-top: 35px;
+  line-height: 45px;
 }
+
 #sider {
   margin-top: -1%;
   color: gray;
-  margin-left: 3%;
 }
 
 .side-nav h5 {
-  // margin-left: 5%;
+  margin-left: 5%;
   color: gray;
 }
 
+p {
+  margin-left: 5%;
+}
 .nav-wrapper {
   margin-top: -7px;
   position: absolute;
