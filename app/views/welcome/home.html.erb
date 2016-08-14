@@ -9,7 +9,7 @@
 
 <div class="logins">
 <% if current_patient %>
-  Signed in as <%= current_patient.name %> | <%= link_to "Logout", '/logout' %>
+  Signed in as <%= current_patient.first_name %> | <%= link_to "Logout", '/logout' %>
 <% else %>
   <%= link_to 'Login', '/login', {class: "waves-effect waves-light blue btn"}%>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <%= link_to 'GET STARTED', '/signup', {class: "waves-effect waves-light blue btn"} %><br><br>
 <% end %>
