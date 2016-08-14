@@ -27,7 +27,8 @@ class AppointmentsController < ApplicationController
   end
 
   def index
-    @appointments = Appointment.all
+    # @appointments = Appointment.all
+    @appointments = current_patient.appointments
   end
 
   private
