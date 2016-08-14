@@ -17,22 +17,23 @@ class AppointmentService
     {
         "appointment": {
             "appointment_status_id": "1",
-            "start_time": "2016-08-18T00:13:58-05:00",
-            "end_time": "2016-08-18T00:14:58-05:00",
+            "start_time": "#{appointment.start_time}",
+            "end_time": "#{appointment.start_time}",
             "location_id": "19669",
             "provider_id": "17138",
             "visit_reason_id": "54562",
             "resource_id": "16627",
             "patients": [{
-                             "id": "487b6f37-41fb-421d-8f37-aeeb59858d3c",
+                             "id": "#{appointment.patient.code}",
                              "comments": "#{appointment_link}"
                          }]
         }
     }
   end
 
-  def self.appointment_link
-    "localhost:3000/provider/start/#{appointment.room.session_id}"
+  def appointment_link
+    # "localhost:3000/provider/start/#{appointment.room.session_id}"
+    "This is a comment and is where the link would go"
   end
 
   def post_appointment

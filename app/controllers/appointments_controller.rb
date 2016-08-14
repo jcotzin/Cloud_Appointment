@@ -10,6 +10,7 @@ class AppointmentsController < ApplicationController
     @appointment = Appointment.create(appointment_params)
     @appointment.patient_id = current_patient.id
     if @appointment.save
+      AppointmentService.create_appointment(@appointment)
       @new_room.sessionId = session.id
       redirect_to appointments_path
     else
