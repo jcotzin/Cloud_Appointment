@@ -1,18 +1,34 @@
 // Place all the styles related to the appointments controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.sider {
+.waves-effect {
+  
+}
+#sider {
   margin-top: -1%;
+  color: gray;
+  margin-left: 3%;
 }
 
 .side-nav h5 {
-  margin-left: 1%;
+  // margin-left: 5%;
   color: gray;
 }
 
 .nav-wrapper {
   margin-top: -7px;
   position: absolute;
+}
+
+.OT_publisher{
+  width: 13% !important;
+  height: 200px !important;
+}
+
+.OT_subscriber{
+  width: 40% !important;
+  margin-left: 493px !important;
+  height: 400px !important;
 }
 
 img.cloud-back {
