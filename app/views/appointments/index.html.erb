@@ -5,8 +5,9 @@
 
       <%= image_tag('cloudapp-logo.png', class: "cloud") %>
 
-
-      <h5>Appointments</a></h5>
+      <% if current_patient %>
+        <h5>Appointments</a></h5>
+      <% end %>
       <% @appointments.each do |appt| %>
       <p><%= image_tag('dr-1.png') %>&emsp;Dr. Carecloud</p>
       <p><%= appt.start_time.strftime("%m/%d/%Y, at %I:%M%p") %></p>
