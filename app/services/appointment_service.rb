@@ -15,29 +15,28 @@ class AppointmentService
 
   def appointment_params
     {
-        "appointment": {
-            "appointment_status_id": "1",
-            "start_time": "#{appointment.start_time}",
-            "end_time": "#{appointment.start_time}",
-            "location_id": "19669",
-            "provider_id": "17138",
-            "visit_reason_id": "54562",
-            "resource_id": "16627",
-            "patients": [{
-                             "id": "#{appointment.patient.code}",
-                             "comments": "#{appointment_link}"
+        "appointment" => {
+            "appointment_status_id" => "1",
+            "start_time" => "#{appointment.start_time.to_time + 4.hours}",
+            "end_time" => "#{appointment.end_time.to_time + 4.hours}",
+            "location_id" => "19669",
+            "provider_id" => "17138",
+            "visit_reason_id" => "54562",
+            "resource_id" => "16627",
+            "patients" => [{
+                             "id" => "#{appointment.patient.code}",
+                             "comments" => "#{appointment_link}"
                          }]
         }
     }
   end
 
   def appointment_link
-    # "localhost:3000/provider/start/#{appointment.room.session_id}"
-    "This is a comment and is where the link would go"
+    "localhost:3000/provider/start/#{appointment.room.sessionId}"
   end
 
   def post_appointment
-    HTTParty.post("#{END_POINT}/appointments?location_id=19669", headers: HEADER, body: appointment_params)
+    HTTParty.post("#{END_POINT}/appointments", {headers: HEADER, body: appointment_params.to_json})
   end
 
 

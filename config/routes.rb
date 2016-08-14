@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   post '/login' =>  'sessions#create'
   get '/logout' => 'sessions#destroy'
 
+  get '/provider/start/:session_id' => 'welcome#start_chat'
   get '/signup' => 'patients#new'
   post '/patients' => 'patients#create'
   get '/show' => 'patients#show'
