@@ -1,6 +1,6 @@
 # README
 
-Cloud Appointments
+Cloud-based Video Appointments
 
 
 Video call with your doctor from anywhere. Seamlessly integrated into the CareCloud Appointmens App. The doctor simply clicks the link in the appo0intment, and the video call will start
