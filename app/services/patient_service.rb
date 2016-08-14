@@ -15,11 +15,10 @@ class PatientService
 
   def patient_hash
     {
-      external_id: patient["id"],
       first_name: patient["first_name"],
       last_name: patient["last_name"],
       email: patient["email_address"],
-      ssn: patient["ssn"] ? patient["ssn"].chars.last(4).join : nil
+      ssn: patient["ssn"] ? patient["ssn"].chars.last(4).join : nil,
       phone: patient_phone
     }
   end
