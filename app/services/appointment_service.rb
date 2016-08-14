@@ -31,27 +31,8 @@ class AppointmentService
     }
   end
 
-  # def test
-  #   {
-  #       "appointment" => {
-  #           "appointment_status_id" => "1",
-  #           "start_time" =>"2016-07-13 12:54:00 +0000",
-  #           "end_time" => "2016-07-14T00:14:58-05:00",
-  #           "location_id" => "19669",
-  #           "provider_id" => "17138",
-  #           "visit_reason_id" => "54562",
-  #           "resource_id" => "16627",
-  #           "patients" => [{
-  #                            "id" => "487b6f37-41fb-421d-8f37-aeeb59858d3c",
-  #                            "comments" => "patient has headache"
-  #                        }]
-  #       }
-  #   }
-  # end
-
   def appointment_link
-    # "localhost:3000/provider/start/#{appointment.room.session_id}"
-    "This is a comment and is where the link would go"
+    "localhost:3000/provider/start/#{appointment.room.sessionId}"
   end
 
   def post_appointment
