@@ -15,21 +15,39 @@ class AppointmentService
 
   def appointment_params
     {
-        "appointment": {
-            "appointment_status_id": "1",
-            "start_time": "#{appointment.start_time}",
-            "end_time": "#{appointment.start_time}",
-            "location_id": "19669",
-            "provider_id": "17138",
-            "visit_reason_id": "54562",
-            "resource_id": "16627",
-            "patients": [{
-                             "id": "#{appointment.patient.code}",
-                             "comments": "#{appointment_link}"
+        "appointment" => {
+            "appointment_status_id" => "1",
+            "start_time" => "#{appointment.start_time.to_time + 4.hours}",
+            "end_time" => "#{appointment.end_time.to_time + 4.hours}",
+            "location_id" => "19669",
+            "provider_id" => "17138",
+            "visit_reason_id" => "54562",
+            "resource_id" => "16627",
+            "patients" => [{
+                             "id" => "#{appointment.patient.code}",
+                             "comments" => "#{appointment_link}"
                          }]
         }
     }
   end
+
+  # def test
+  #   {
+  #       "appointment" => {
+  #           "appointment_status_id" => "1",
+  #           "start_time" =>"2016-07-13 12:54:00 +0000",
+  #           "end_time" => "2016-07-14T00:14:58-05:00",
+  #           "location_id" => "19669",
+  #           "provider_id" => "17138",
+  #           "visit_reason_id" => "54562",
+  #           "resource_id" => "16627",
+  #           "patients" => [{
+  #                            "id" => "487b6f37-41fb-421d-8f37-aeeb59858d3c",
+  #                            "comments" => "patient has headache"
+  #                        }]
+  #       }
+  #   }
+  # end
 
   def appointment_link
     # "localhost:3000/provider/start/#{appointment.room.session_id}"
@@ -37,7 +55,7 @@ class AppointmentService
   end
 
   def post_appointment
-    HTTParty.post("#{END_POINT}/appointments?location_id=19669", headers: HEADER, body: appointment_params)
+    HTTParty.post("#{END_POINT}/appointments", {headers: HEADER, body: appointment_params.to_json})
   end
 
 
