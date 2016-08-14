@@ -1,22 +1,30 @@
 <body class="session">
 
 <br>
-<h2 class="header">cloudapp</h2><i class="fa fa-cloud" style="margin-top:10px; color:#2196f3;"></i>
-<br><br><br><br>
+<h3 class="header">cloudapp</h3><i class="fa fa-cloud fa-2x" style="margin-top:-5px; color:#2196f3;"></i>
+<br><br><br>
 
-<p class="tagline">The wait is over.<br><span class="tag">Book and see your <br>doctor online.</span></p>
+<p class="tagline">The wait is over.<br><span class="tag">Book and see<br>your doctor online.</span></p>
 
 
-<div class="logins">
+<div class="logins" style="margin-top:-20px">
 <% if current_patient %>
   Signed in as <%= current_patient.name %> | <%= link_to "Logout", '/logout' %>
 <% else %>
   <%= link_to 'Login', '/login', {class: "waves-effect waves-light blue btn"}%>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <%= link_to 'GET STARTED', '/signup', {class: "waves-effect waves-light blue btn"} %><br><br>
 <% end %>
 </div>
-<br><br><br><br><br>
+<br><br><br><br><br><br><br><br>
+
+
 
 <div class="section white">
+  <div class="row container">
+
+  </div>
+</div>
+
+<div class="section blue">
   <div class="row container">
 
   </div>
