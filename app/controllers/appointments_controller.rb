@@ -36,7 +36,7 @@ class AppointmentsController < ApplicationController
   private
 
   def message
-    "Hi #{@patient.first_name} your doctor is ready for you. Here's the link: localhost:3000/patient/start/#{@appointment.room.sessionId}"
+    "Hi #{@patient.first_name} your doctor is ready for you. Here's the link: https://cloud-appointments.herokuapp.com/patient/start/#{@appointment.room.sessionId}"
   end
 
   def set_user
