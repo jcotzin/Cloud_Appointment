@@ -3,7 +3,6 @@
   <div class="sider">
     <ul id="slide-out" class="side-nav fixed">
       <%= image_tag('cloudapp-logo.png', class: "cloud") %>
-      <h5>Physicians</a></h5>
       <h5>Appointments</a></h5>
       <% @appointments.each do |appt| %>
       <li><p><%= appt.start_time %><%= link_to "Start", appt %></p></li>
@@ -16,7 +15,7 @@
   <div class="nav-wrapper blue">
     <a href="#" class="brand-logo">Logo</a>
     <ul id="nav-mobile" class="right hide-on-med-and-down">
-      <li><%= image_tag('dr-1.png', class: "dr1") %><a href="sass.html"><%= @current_patient.first_name %>&nbsp;<%= @current_patient.last_name %></a></li>
+      <li><%= image_tag('dr-1.png', class: "dr1", style: "margin-top:5px") %><a href="sass.html"><%= @current_patient.first_name %>&nbsp;<%= @current_patient.last_name %></a></li>
       <li><a href="badges.html">Logout</a></li>
     </ul>
   </div>
