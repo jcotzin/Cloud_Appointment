@@ -1,5 +1,4 @@
 class AppointmentsController < ApplicationController
-  before_filter :authorize
   before_filter :set_user, only: [:show]
   before_filter :set_appointments, only: [:show, :index]
 
@@ -36,7 +35,7 @@ class AppointmentsController < ApplicationController
   private
 
   def message
-    "Hi #{@patient.first_name} your doctor is ready for you. Here's the link: localhost:3000/patient/start/#{@appointment.room.sessionId}"
+    "Hi #{@patient.first_name} your doctor is ready for you. Here's the link: https://cloud-appointments.herokuapp.com/patient/start/#{@appointment.room.sessionId}"
   end
 
   def set_user
@@ -48,7 +47,7 @@ class AppointmentsController < ApplicationController
   end
 
   def set_appointments
-    @appointments = current_patient.appointments
+    @appointments = current_patient ? current_patient.appointments : []
   end
 
   def appointment_params
