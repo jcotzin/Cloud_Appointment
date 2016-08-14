@@ -6,7 +6,7 @@
       <h5>Physicians</a></h5>
       <h5>Appointments</a></h5>
       <% @appointments.each do |appt| %>
-      <li><p><%= appt.start_time %><%= link_to "Start", appt %></p></li>
+      <li><p><%= appt.start_time %><%= link_to "Start", patient_appointment_path(current_patient, appt.id) %></p></li>
       <% end %>
   </ul>
   <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
@@ -16,10 +16,14 @@
   <div class="nav-wrapper blue">
     <a href="#" class="brand-logo">Logo</a>
     <ul id="nav-mobile" class="right hide-on-med-and-down">
-      <li><%= image_tag('dr-1.png', class: "dr1") %><a href="sass.html"><%= @current_patient.first_name %>&nbsp;<%= @current_patient.last_name %></a></li>
+      <li><%= image_tag('dr-1.png', class: "dr1") %><a href="sass.html"><%= current_patient.first_name %>&nbsp;<%= current_patient.last_name %></a></li>
       <li><a href="badges.html">Logout</a></li>
     </ul>
   </div>
 </nav>
-<%= image_tag('video-not-started.png', class: "vid") %>
+<% if @appointment %>
+  <%= render 'show' %>
+<% else %>
+  <%= image_tag('video-not-started.png', class: "vid") %>
+<% end %>
 </body>

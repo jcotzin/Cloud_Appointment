@@ -1,6 +1,7 @@
 class AppointmentsController < ApplicationController
   before_filter :authorize
   before_filter :set_user, only: [:show]
+  before_filter :set_appointments, only: [:show, :index]
 
   def new
     @appointment = Appointment.new
@@ -24,13 +25,12 @@ class AppointmentsController < ApplicationController
 
   def show
     @appointment = Appointment.find(params[:id])
-    Text.send(@patient.phone, message)
+    # Text.send(@patient.phone, message)
     @token = opentok.generate_token @appointment.room.sessionId
+    render 'index'
   end
 
   def index
-    # @appointments = Appointment.all
-    @appointments = current_patient.appointments
   end
 
   private
@@ -45,6 +45,10 @@ class AppointmentsController < ApplicationController
 
   def opentok
     @opentok ||= OpenTok::OpenTok.new ENV["TOKAPI"], ENV["TOKSECRET"]
+  end
+
+  def set_appointments
+    @appointments = current_patient.appointments
   end
 
   def appointment_params
