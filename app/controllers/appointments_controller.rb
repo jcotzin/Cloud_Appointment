@@ -25,7 +25,7 @@ class AppointmentsController < ApplicationController
 
   def show
     @appointment = Appointment.find(params[:id])
-    # Text.send(@patient.phone, message)
+    Text.send(@patient.phone, message)
     @token = opentok.generate_token @appointment.room.sessionId
     render 'index'
   end
