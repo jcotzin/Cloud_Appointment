@@ -20,7 +20,7 @@
 
 
 body.form {
-  background-color: #e3f2fd;
+  background-color: #e0f7fa;
   transition: color 4s ease;
 }
 
@@ -31,6 +31,13 @@ h3.header {
   color: #424242;
 }
 
+.logoheader {
+  -webkit-animation: fadein 1.5s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 1.5s; /* Firefox < 16 */
+  -ms-animation: fadein 1.5s; /* Internet Explorer */
+  -o-animation: fadein 1.5s; /* Opera < 12.1 */
+  animation: fadein 1.5s;
+}
 
 p.tagline {
   text-align: center;
@@ -68,16 +75,19 @@ div.logins {
 input[type=text]:focus {
   border-bottom: 1px solid #2196f3 !important;
   box-shadow: 0 1px 0 0 #2196f3 !important;
+  color: black !important;
 }
 
 input[type=email]:focus {
   border-bottom: 1px solid #2196f3 !important;
   box-shadow: 0 1px 0 0 #2196f3 !important;
+  color: black !important;
 }
 
 input[type=password]:focus {
   border-bottom: 1px solid #2196f3 !important;
   box-shadow: 0 1px 0 0 #2196f3 !important;
+  color: black !important;
 }
 
 body.session {
@@ -88,7 +98,7 @@ body.session {
 }
 
 .section {
-    height: 600px;
+    height: 350px;
   }
 
 

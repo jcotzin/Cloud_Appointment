@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   resources :patients do
     resources :appointments
   end
+  
   root 'welcome#home'
   get '/login' => 'sessions#new'
   post '/login' =>  'sessions#create'
