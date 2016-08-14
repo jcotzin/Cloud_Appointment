@@ -1,9 +1,7 @@
 // Place all the styles related to the appointments controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-// a.waves-effect {
-//   position: absolute;
-// }
+
 a.waves-effect.waves-light.btn {
   color: white;
   height: 40px;
@@ -11,7 +9,6 @@ a.waves-effect.waves-light.btn {
   margin-top: 35px;
   line-height: 45px;
 }
-
 #sider {
   margin-top: -1%;
   color: gray;
@@ -65,4 +62,8 @@ img.dr1 {
 
 .appt {
   margin-left: 50%;
+}
+
+#sider{
+  text-align: center;
 }

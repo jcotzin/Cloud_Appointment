@@ -12,13 +12,14 @@
       <%=form_for @appointment do |f|%>
 
       <div class="input-field">
+        
           <%= f.datetime_field :start_time, class: "validate"%>
-          <label for="email" style="color:#2196f3;">Start time</label>
+          <label for="email" placeholder=" " style="color:#2196f3;">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Start time</label>
         </div>
 
         <div class="input-field">
             <%= f.datetime_field :end_time, class: "validate"%>
-            <label for="email" style="color:#2196f3;">End time</label>
+            <label for="email" placeholder=" " style="color:#2196f3;">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;End time</label>
           </div>
 
       <div style="text-align:center;"><%= submit_tag "CREATE APPOINTMENT", {class: "waves-effect waves-light blue btn"} %></div>
