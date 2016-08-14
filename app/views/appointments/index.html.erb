@@ -2,14 +2,16 @@
   <%= image_tag('cloudapp-background.png', class: "cloud-back") %>
   <div id="sider">
     <ul id="slide-out" class="side-nav fixed">
+
       <%= image_tag('cloudapp-logo.png', class: "cloud") %>
+
       <h5>Appointments</a></h5>
       <% @appointments.each do |appt| %>
-      <li><p><%= appt.start_time %><%= link_to "Start", patient_appointment_path(current_patient, appt.id, class: "waves-effect waves-light blue btn")%></p></li>
+      <p><%= image_tag('dr-1.png') %>&emsp;Dr. Parker</p>
+      <li><%= appt.start_time.strftime("%m/ %d/ %Y") %></li>
+      <li><%= appt.start_date %></li>
       <% end %>
-      <h5>Physicians</a></h5>
-      <p><%= image_tag('dr-1.png', class: "dr1") %>&emsp;Dr. Octavius</p>
-      <p><%= image_tag('dr-2.png', class: "dr1") %>&emsp;Dr. Parker</p>
+
   </ul>
   <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
 </div>
