@@ -3,7 +3,9 @@ Rails.application.routes.draw do
     resources :rooms
   end
 
-  resources :patients
+  resources :patients do
+    resources :appointments
+  end
   root 'sessions#new'
   get '/login' => 'sessions#new'
   post '/login' =>  'sessions#create'
