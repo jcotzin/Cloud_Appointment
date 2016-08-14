@@ -47,7 +47,7 @@ class AppointmentsController < ApplicationController
   end
 
   def set_appointments
-    @appointments = current_patient.appointments
+    @appointments = current_patient.appointments if current_patient
   end
 
   def appointment_params
