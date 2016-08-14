@@ -29,6 +29,43 @@ h3.header {
   float: left;
   margin-left: 35px;
   color: #424242;
+  -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 1s; /* Firefox < 16 */
+  -ms-animation: fadein 1s; /* Internet Explorer */
+  -o-animation: fadein 1s; /* Opera < 12.1 */
+  animation: fadein 1s;
+}
+
+.logoheader {
+  -webkit-animation: fadein 1.5s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 1.5s; /* Firefox < 16 */
+  -ms-animation: fadein 1.5s; /* Internet Explorer */
+  -o-animation: fadein 1.5s; /* Opera < 12.1 */
+  animation: fadein 1.5s;
+}
+
+.input-field {
+  -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 3s; /* Firefox < 16 */
+  -ms-animation: fadein 3s; /* Internet Explorer */
+  -o-animation: fadein 3s; /* Opera < 12.1 */
+  animation: fadein 3s;
+}
+
+.endbuttons {
+  -webkit-animation: fadein 3.5s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 3.5s; /* Firefox < 16 */
+  -ms-animation: fadein 3.5s; /* Internet Explorer */
+  -o-animation: fadein 3.5s; /* Opera < 12.1 */
+  animation: fadein 3.5s;
+}
+
+i.fa {
+  -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 1s; /* Firefox < 16 */
+  -ms-animation: fadein 1s; /* Internet Explorer */
+  -o-animation: fadein 1s; /* Opera < 12.1 */
+  animation: fadein 1s;
 }
 
 
@@ -39,11 +76,11 @@ p.tagline {
   color: #2196f3;
   line-height: 90%;
   letter-spacing: -2px;
-  -webkit-animation: fadein 1.5s; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 1.5s; /* Firefox < 16 */
-  -ms-animation: fadein 1.5s; /* Internet Explorer */
-  -o-animation: fadein 1.5s; /* Opera < 12.1 */
-  animation: fadein 1.5s;
+  -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 3s; /* Firefox < 16 */
+  -ms-animation: fadein 3s; /* Internet Explorer */
+  -o-animation: fadein 3s; /* Opera < 12.1 */
+  animation: fadein 3s;
 }
 
 span.tag {
@@ -55,6 +92,11 @@ div.logins {
   color: #2196f3;
   font-family: Futura;
   font-size: 12px;
+  -webkit-animation: fadein 4.5s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 4.5s; /* Firefox < 16 */
+  -ms-animation: fadein 4.5s; /* Internet Explorer */
+  -o-animation: fadein 4.5s; /* Opera < 12.1 */
+  animation: fadein 4.5s;
 }
 
 .loginbutton {
@@ -86,8 +128,6 @@ input[type=password]:focus {
 body.session {
   background-image: url("http://i.imgur.com/LezpMWm.jpg");
   background-repeat: no-repeat;
-  -webkit-transition: all 5s ease;
-  transition: all 5s ease  ;
 }
 
 .section {
@@ -113,4 +153,34 @@ body.session {
     -webkit-border-radius: 10px;
     border-radius: 10px;
     background: #2196f3;
+}
+
+
+@keyframes fadein {
+   from { opacity: 0; }
+   to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+   from { opacity: 0; }
+   to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+   from { opacity: 0; }
+   to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+   from { opacity: 0; }
+   to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+   from { opacity: 0; }
+   to   { opacity: 1; }
 }
