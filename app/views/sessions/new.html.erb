@@ -1,7 +1,7 @@
 <body class="form">
 
 <br><br><br><br>
-<div style="text-align:center"><%= image_tag('logo.png') %></div>
+<div class="logoheader" style="text-align:center"><%= image_tag('logooo.png') %></div>
 
 <div class="container">
   <div class="row">
@@ -11,12 +11,12 @@
 
       <div class="input-field">
           <%= text_field_tag :email, nil, class: "validate"%>
-          <label for="email">Email</label>
+          <label for="email" style="color:#2196f3;">Email</label>
         </div>
 
         <div class="input-field">
             <%= password_field_tag :password, nil, class: "validate"%>
-            <label for="email">Password</label>
+            <label for="email" style="color:#2196f3;">Password</label>
           </div>
 
       <div style="text-align:center;"><%= submit_tag :submit, {class: "waves-effect waves-light blue btn"} %></div>

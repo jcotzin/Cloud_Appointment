@@ -1,7 +1,7 @@
 <body class="form">
 
 <br><br><br><br>
-<div style="text-align:center"><%= image_tag('logo.png') %></div>
+<div class="logoheader" style="text-align:center"><%= image_tag('logooo.png') %></div>
 
 <div class="container">
   <div class="row">
@@ -11,22 +11,22 @@
 
       <div class="input-field">
           <%= f.text_field :code, class: "validate"%>
-          <label for="email">Referral Code</label>
+          <label for="email" style="color:#2196f3;">Referral code</label>
         </div>
 
         <div class="input-field">
             <%= f.text_field :ssn, class: "validate"%>
-            <label for="email">SSN (Last 4 digits)</label>
+            <label for="email" style="color:#2196f3;">SSN (Last 4 digits)</label>
           </div>
 
           <div class="input-field">
               <%= f.password_field :password, class: "validate"%>
-              <label for="email">Password</label>
+              <label for="email" style="color:#2196f3;">Password</label>
             </div>
 
             <div class="input-field">
                 <%= f.password_field :password_confirmation, class: "validate"%>
-                <label for="email">Re-type password</label>
+                <label for="email" style="color:#2196f3;">Re-type password</label>
               </div>
 
       <div style="text-align:center;"><%= f.submit "Submit", {class: "waves-effect waves-light blue btn"} %></div>

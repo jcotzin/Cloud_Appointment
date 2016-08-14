@@ -1,13 +1,29 @@
-<%=form_for @appointment do |f|%>
 
-<h1>Create Your Appointment</h1>
-  <p>
-    Start Time
-    <%= f.datetime_field :start_time %>
-  </p>
-  <p>
-    End Time
-  <%= f.datetime_field :end_time %>
-  </p>
-  <%= f.submit "Create Appointment"%>
-<% end %>
+
+<body class="form">
+
+<br><br><br><br>
+<div class="logoheader" style="text-align:center"><%= image_tag('logooo.png') %></div>
+
+<div class="container">
+  <div class="row">
+    <div class="col s6 offset-s3">
+
+      <%=form_for @appointment do |f|%>
+
+      <div class="input-field">
+          <%= f.datetime_field :start_time, class: "validate"%>
+          <label for="email" style="color:#2196f3;">Start time</label>
+        </div>
+
+        <div class="input-field">
+            <%= f.datetime_field :end_time, class: "validate"%>
+            <label for="email" style="color:#2196f3;">End time</label>
+          </div>
+
+      <div style="text-align:center;"><%= submit_tag "CREATE APPOINTMENT", {class: "waves-effect waves-light blue btn"} %></div>
+      <% end %>
+    </div>
+  </div>
+</div>
+</body>
