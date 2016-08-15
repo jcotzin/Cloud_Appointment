@@ -1,0 +1,187 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import "materialize";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+
+body.form {
+  background-color: #e0f7fa;
+  transition: color 4s ease;
+}
+
+h3.header {
+  font-family: Futura;
+  float: left;
+  margin-left: 35px;
+  color: #424242;
+  -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 1s; /* Firefox < 16 */
+  -ms-animation: fadein 1s; /* Internet Explorer */
+  -o-animation: fadein 1s; /* Opera < 12.1 */
+  animation: fadein 1s;
+}
+
+.logoheader {
+  -webkit-animation: fadein 1.5s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 1.5s; /* Firefox < 16 */
+  -ms-animation: fadein 1.5s; /* Internet Explorer */
+  -o-animation: fadein 1.5s; /* Opera < 12.1 */
+  animation: fadein 1.5s;
+}
+
+.input-field {
+  -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 3s; /* Firefox < 16 */
+  -ms-animation: fadein 3s; /* Internet Explorer */
+  -o-animation: fadein 3s; /* Opera < 12.1 */
+  animation: fadein 3s;
+}
+
+.endbuttons {
+  -webkit-animation: fadein 3.5s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 3.5s; /* Firefox < 16 */
+  -ms-animation: fadein 3.5s; /* Internet Explorer */
+  -o-animation: fadein 3.5s; /* Opera < 12.1 */
+  animation: fadein 3.5s;
+}
+
+i.fa {
+  -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 1s; /* Firefox < 16 */
+  -ms-animation: fadein 1s; /* Internet Explorer */
+  -o-animation: fadein 1s; /* Opera < 12.1 */
+  animation: fadein 1s;
+}
+
+
+p.tagline {
+  text-align: center;
+  font-family: Palatino;
+  font-size: 80px;
+  color: #2196f3;
+  line-height: 90%;
+  letter-spacing: -2px;
+  -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 3s; /* Firefox < 16 */
+  -ms-animation: fadein 3s; /* Internet Explorer */
+  -o-animation: fadein 3s; /* Opera < 12.1 */
+  animation: fadein 3s;
+}
+
+span.tag {
+  color: #424242;
+}
+
+div.logins {
+  text-align: center;
+  color: #2196f3;
+  font-family: Futura;
+  font-size: 12px;
+  -webkit-animation: fadein 4.5s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 4.5s; /* Firefox < 16 */
+  -ms-animation: fadein 4.5s; /* Internet Explorer */
+  -o-animation: fadein 4.5s; /* Opera < 12.1 */
+  animation: fadein 4.5s;
+}
+
+.loginbutton {
+  text-align: center;
+}
+
+.waves-effect {
+  border-radius: 500px;
+}
+
+input[type=text]:focus {
+  border-bottom: 1px solid #2196f3 !important;
+  box-shadow: 0 1px 0 0 #2196f3 !important;
+  color: black !important;
+}
+
+input[type=email]:focus {
+  border-bottom: 1px solid #2196f3 !important;
+  box-shadow: 0 1px 0 0 #2196f3 !important;
+  color: black !important;
+}
+
+input[type=password]:focus {
+  border-bottom: 1px solid #2196f3 !important;
+  box-shadow: 0 1px 0 0 #2196f3 !important;
+  color: black !important;
+}
+
+body.session {
+  background-image: image-url("dr");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.section {
+    height: 350px;
+  }
+
+
+
+  /* Bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px white;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #2196f3;
+}
+
+
+@keyframes fadein {
+   from { opacity: 0; }
+   to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+   from { opacity: 0; }
+   to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+   from { opacity: 0; }
+   to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+   from { opacity: 0; }
+   to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+   from { opacity: 0; }
+   to   { opacity: 1; }
+}
